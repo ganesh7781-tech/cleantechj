@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Clean Biotech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header { padding-top: 110px; padding-bottom: 30px; background: var(--color-bg-dark); color: white; text-align: center; }
+        .page-title { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .content-section { max-width: 1200px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; }
+        
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+        .gallery-item { position: relative; height: 250px; border-radius: 8px; overflow: hidden; background: #e5e7eb; display: flex; align-items: center; justify-content: center; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-item::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5), transparent); opacity: 0; transition: opacity 0.3s ease; }
+        .gallery-item:hover::after { opacity: 1; }
+    </style>
+</head>
+<body>
+    <header id="navbar" class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo" style="height: 85px; display: block;"></a>
+            <button class="mobile-toggle" aria-label="Toggle menu"><i class="ph ph-list"></i></button>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="about-us.html" class="nav-link">ABOUT US</a></li>
+                    <li><a href="waste-management-services.html" class="nav-link">WASTE MANAGEMENT SERVICES</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">RECYCLED PRODUCTS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="recycled-plastic-products.html">Recycled Plastic Products</a></li>
+                            <li><a href="recycled-plastic-granules.html">Recycled Plastic Granules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacts.html" class="nav-link">CONTACT US</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dots-dropdown-btn"><i class="ph-bold ph-dots-three-vertical"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="blog.html">News and Events</a></li>
+                            <li><a href="about-us.html">Brochure</a></li>
+                            <li><a href="gallery-2.html">Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">Photo <span class="text-highlight">Gallery</span></h1>
+            <p class="text-gray">Glimpses of our facilities and sustainable operations.</p>
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <div class="container content-section">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1080&q=80" alt="Clean Biotech Facility">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=1080&q=80" alt="Facility Indoor">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1080&q=80" alt="EHS Management">
+                </div>
+                <div class="gallery-item" style="background: var(--color-primary); color: white; flex-direction: column; font-family: var(--font-heading);">
+                    <i class="ph ph-plus" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+                    <p>More photos coming soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo footer-logo"><img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo" style="height: 85px; display: block;"></a>
+                    <p class="footer-desc">Providing exceptional service to our customers, eliminating pollution, and guiding industries towards a sustainable future.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="waste-management-services.html">Waste Management</a></li>
+                        <li><a href="recycled-plastic-products.html">Recycled Products</a></li>
+                        <li><a href="gallery-2.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li style="align-items: flex-start; margin-bottom: 1rem;"><i class="ph-fill ph-map-pin" style="margin-top: 4px;"></i><div style="line-height: 1.4;"><strong>Factory Address:</strong><br><span style="font-size: 0.9rem;">Survey No. 55, MIDC Tarapur,<br>Boisar (W) - 401506</span></div></li>
+                        <li style="align-items: flex-start; margin-bottom: 1rem;"><i class="ph-fill ph-buildings" style="margin-top: 4px;"></i><div style="line-height: 1.4;"><strong>Regd. Office:</strong><br><span style="font-size: 0.9rem;">Sai Chambers, Thane (W) - 400604</span></div></li>
+                        <li style="align-items: center; margin-bottom: 1rem;"><i class="ph-fill ph-phone"></i><div style="line-height: 1.4;"><strong>Phone:</strong> <span style="font-size: 0.9rem;">9130220077 / 9112220077</span></div></li>
+                        <li style="align-items: center;"><i class="ph-fill ph-envelope-simple"></i><a href="mailto:cleanbiotechpvtltd@gmail.com" style="font-size: 0.9rem;">cleanbiotechpvtltd@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">© 2026 Clean Bio Tech LTD. All Rights Reserved.</div>
+                <div class="credits">Designed for <span class="text-highlight">Industrial Excellence</span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
