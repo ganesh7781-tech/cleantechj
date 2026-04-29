@@ -21,7 +21,8 @@
     <header id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo" style="height: 85px; display: block;">
+                <img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp"
+                    alt="Clean Biotech Logo">
             </a>
             
             <button class="mobile-toggle" aria-label="Toggle menu">
@@ -60,12 +61,12 @@
             <div class="hero-content">
                 <h1 class="hero-title">Save Environment for <span class="text-highlight">Brighter Future</span></h1>
                 <p class="hero-description">We partner with industries to guide sustainable plantation, preserve natural resources, and implement advanced waste management solutions.</p>
-                <div class="hero-actions">
+                <div class="hero-actions reveal" style="transition-delay: 0.4s;">
                     <a href="about-us.html" class="btn btn-primary btn-lg">Discover Our Impact <i class="ph ph-arrow-right"></i></a>
                     <a href="waste-management-services.html" class="btn btn-outline btn-lg">Our Services</a>
                 </div>
             </div>
-            <div class="hero-stats">
+            <div class="hero-stats reveal" style="transition-delay: 0.6s;">
                 <div class="stat-item">
                     <span class="stat-number">100%</span>
                     <span class="stat-label">Compliance</span>
@@ -81,6 +82,10 @@
                     <span class="stat-label">Trees Planted</span>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="mouse-scroll"></div>
         </div>
     </section>
 
@@ -100,12 +105,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-content" style="text-align: justify; padding-right: 1rem;">
-                    <h2 class="section-title">Introduction</h2>
-                    <p class="lead-text" style="margin-bottom: 1.5rem; line-height: 1.8;">Clean Biotech Pvt Ltd is having specially dedicated faculty to guide industries regarding plantation and perseverance of the same according to their need and capacity and availability of resources.</p>
-                    <p style="margin-bottom: 2rem; line-height: 1.8;">Clean Biotech Pvt Ltd is also engaged in developing lands, occupied by various types of industries reserved for plantation. We have tried and still trying to plant only those plants, which will eliminate and control pollution with ease and accordingly.</p>
+                <div class="about-content reveal" style="text-align: justify; padding-right: 1rem;">
+                    <h2 class="section-title">Revolutionizing <span class="text-highlight">Industrial Sustainability</span></h2>
+                    <p class="lead-text">Clean Biotech Pvt Ltd is dedicated to guiding industries through the complexities of environmental preservation and sustainable development.</p>
+                    <p>We provide specialized expertise to help companies integrate lush plantations and resource management strategies into their operations, ensuring long-term ecological balance.</p>
+                    
+                    <ul class="feature-list">
+                        <li><i class="ph-fill ph-check-circle"></i> MPCB Authorized Facility Management</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Expert Environment & EHS Consultation</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Sustainable Plantation & Land Development</li>
+                    </ul>
 
-                    <a href="contacts.html" class="btn btn-primary">Partner With Us</a>
+                    <a href="contacts.html" class="btn btn-primary">Partner With Us <i class="ph ph-handshake"></i></a>
                 </div>
             </div>
         </div>
@@ -114,9 +125,10 @@
     <!-- Services Section -->
     <section id="services" class="services section-padding bg-light">
         <div class="container">
-            <div class="section-header text-center" style="margin-bottom: 2rem;">
+            <div class="section-header text-center reveal">
                 <div class="badge mx-auto">Core Solutions</div>
-                <h2 class="section-title">Our <span class="text-highlight">Services</span></h2>
+                <h2 class="section-title">Industrial <span class="text-highlight">Services</span></h2>
+                <p class="section-subtitle">We provide comprehensive waste management and safety solutions tailored to your industry's unique needs.</p>
             </div>
             
             <div class="intro-text-block" style="max-width: 900px; margin: 0 auto 2.5rem auto; text-align: justify; font-size: 1.1rem; line-height: 1.8; color: #374151; background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--color-primary);">
@@ -163,18 +175,18 @@
     </section>
 
     <!-- Recycling Process Section -->
-    <section class="recycling-process section-padding" style="border-top: 1px solid #eeeeee;">
+    <section class="recycling-process section-padding reveal" style="border-top: 1px solid #eeeeee;">
         <div class="container text-center">
             <h2 class="section-title">Recycling <span class="text-highlight">Process</span></h2>
-            <p style="margin-bottom: 2rem;">Learn more about our detailed recycling and process workflows.</p>
-            <a href="recycled-plastic-products.html" class="btn btn-primary">Learn more <i class="ph ph-arrow-right"></i></a>
+            <p style="margin-bottom: 2rem; color: var(--color-text-muted); font-size: 1.1rem;">Learn more about our detailed recycling and process workflows.</p>
+            <a href="recycled-plastic-products.html" class="btn btn-primary btn-lg">Learn more <i class="ph ph-arrow-right"></i></a>
         </div>
     </section>
 
     <!-- Core Values Section -->
-    <section class="values section-padding bg-light">
+    <section id="values" class="values section-padding bg-light">
         <div class="container">
-            <div class="section-header text-center">
+            <div class="section-header text-center reveal">
                 <h2 class="section-title">Our Core <span class="text-highlight">Values</span></h2>
                 <p class="section-subtitle">The foundation of our business success is our passionate commitment to these principles.</p>
             </div>
@@ -239,7 +251,7 @@
             <div class="footer-grid">
                 <div class="footer-col brand-col">
                     <a href="#" class="logo footer-logo">
-                        <img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo" style="height: 85px; display: block;">
+                        <img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo">
                     </a>
                     <p class="footer-desc">Providing exceptional service to our customers, eliminating pollution, and guiding industries towards a sustainable future.</p>
                     <div class="social-links">
@@ -263,10 +275,22 @@
                 <div class="footer-col">
                     <h4 class="footer-heading">Contact Info</h4>
                     <ul class="contact-info">
-                        <li style="align-items: flex-start; margin-bottom: 1rem;"><i class="ph-fill ph-map-pin" style="margin-top: 4px;"></i><div style="line-height: 1.4;"><strong>Factory Address:</strong><br><span style="font-size: 0.9rem;">Survey No. 55, MIDC Tarapur,<br>Boisar (W) - 401506</span></div></li>
-                        <li style="align-items: flex-start; margin-bottom: 1rem;"><i class="ph-fill ph-buildings" style="margin-top: 4px;"></i><div style="line-height: 1.4;"><strong>Regd. Office:</strong><br><span style="font-size: 0.9rem;">Sai Chambers, Thane (W) - 400604</span></div></li>
-                        <li style="align-items: center; margin-bottom: 1rem;"><i class="ph-fill ph-phone"></i><div style="line-height: 1.4;"><strong>Phone:</strong> <span style="font-size: 0.9rem;">9130220077 / 9112220077</span></div></li>
-                        <li style="align-items: center;"><i class="ph-fill ph-envelope-simple"></i><a href="mailto:cleanbiotechpvtltd@gmail.com" style="font-size: 0.9rem;">cleanbiotechpvtltd@gmail.com</a></li>
+                        <li>
+                            <i class="ph-fill ph-map-pin"></i>
+                            <div><strong>Factory Address:</strong> Survey No. 55, MIDC Tarapur, Boisar (W) - 401506</div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-buildings"></i>
+                            <div><strong>Regd. Office:</strong> Sai Chambers, Thane (W) - 400604</div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-phone"></i>
+                            <div><strong>Phone:</strong> 9130220077 / 9112220077</div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-envelope-simple"></i>
+                            <a href="mailto:cleanbiotechpvtltd@gmail.com">cleanbiotechpvtltd@gmail.com</a>
+                        </li>
                     </ul>
                 </div>
             </div>

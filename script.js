@@ -2,17 +2,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
     
-    window.addEventListener('scroll', () => {
+    const handleScroll = () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
 
     // Mobile Menu Toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    const navList = document.querySelector('.nav-list');
     const icon = mobileToggle.querySelector('i');
 
     mobileToggle.addEventListener('click', () => {
@@ -20,38 +24,48 @@ document.addEventListener('DOMContentLoaded', () => {
         if (navMenu.classList.contains('active')) {
             icon.classList.remove('ph-list');
             icon.classList.add('ph-x');
+            document.body.style.overflow = 'hidden';
         } else {
             icon.classList.remove('ph-x');
             icon.classList.add('ph-list');
+            document.body.style.overflow = 'auto';
         }
     });
 
-    // Mobile Dropdown Toggle
-    const dropdowns = document.querySelectorAll('.dropdown');
-    
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
-                // Prevent link navigation on first click to open dropdown
-                if (e.target.classList.contains('nav-link')) {
-                    e.preventDefault();
-                    dropdown.classList.toggle('active');
-                }
-            }
+    // Add staggered delay to reveal elements in grids BEFORE observing
+    document.querySelectorAll('.services-grid, .values-grid').forEach(grid => {
+        const children = grid.children;
+        Array.from(children).forEach((child, index) => {
+            child.classList.add('reveal');
+            child.style.transitionDelay = `${index * 0.1}s`;
         });
     });
+
+    // Reveal Animations on Scroll
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                revealObserver.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Now query all reveal elements (including the ones just added)
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
     // Smooth Scroll for Anchor Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            if(this.getAttribute('href') === '#') return;
+            const href = this.getAttribute('href');
+            if(href === '#' || !href.startsWith('#')) return;
             
-            // Allow default behavior for links in dropdowns if they are handled above
-            if (this.parentElement.classList.contains('dropdown') && window.innerWidth <= 768) return;
-
             e.preventDefault();
             
-            const targetId = this.getAttribute('href').substring(1);
+            const targetId = href.substring(1);
             const targetElement = document.getElementById(targetId);
             
             if (targetElement) {
@@ -60,10 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     navMenu.classList.remove('active');
                     icon.classList.remove('ph-x');
                     icon.classList.add('ph-list');
+                    document.body.style.overflow = 'auto';
                 }
 
-                // Adjust for fixed header
-                const headerOffset = 80;
+                const headerOffset = 90;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
