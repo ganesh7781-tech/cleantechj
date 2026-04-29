@@ -462,7 +462,7 @@ img {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow-lg);
-    height: 400px;
+    height: 320px;
 }
 
 .about-image-main img {
@@ -478,10 +478,10 @@ img {
 
 .experience-card {
     position: absolute;
-    bottom: -30px;
-    right: -30px;
+    bottom: -15px;
+    right: -15px;
     background: var(--color-bg-dark);
-    padding: 2rem;
+    padding: 1.25rem;
     border-radius: 8px;
     box-shadow: var(--shadow-lg);
     display: flex;
@@ -491,7 +491,7 @@ img {
 }
 
 .icon-large {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--color-primary);
 }
 
