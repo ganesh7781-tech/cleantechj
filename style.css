@@ -219,7 +219,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     background: #ffffff;
     border-bottom: 4px solid #ffeb3b;
     box-shadow: var(--shadow-md);
@@ -227,7 +227,7 @@ img {
 
 #navbar.scrolled {
     background: #ffffff;
-    padding: 0.8rem 0;
+    padding: 1.2rem 0;
     box-shadow: var(--shadow-md);
     border-bottom: 4px solid #ffeb3b;
 }
@@ -353,7 +353,7 @@ img {
     min-height: 70vh;
     display: flex;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 10rem;
     overflow: hidden;
 }
 
