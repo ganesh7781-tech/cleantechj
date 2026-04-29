@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdowns.forEach(dropdown => {
         const link = dropdown.querySelector('.nav-link');
         link.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 991) {
                 e.preventDefault();
                 dropdown.classList.toggle('active');
                 

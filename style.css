@@ -1202,17 +1202,6 @@ img {
 /* ==========================================================================
    Responsive Design
    ========================================================================== */
-@media (max-width: 1024px) {
-    .hero-title {
-        font-size: 3rem;
-    }
-    
-    .about-grid {
-        gap: 2rem;
-    }
-    
-    .footer-grid {
-
 /* Tablet View (up to 1024px) */
 @media (max-width: 1024px) {
     .container {
@@ -1242,8 +1231,8 @@ img {
     }
 }
 
-/* Mobile View (up to 768px) */
-@media (max-width: 768px) {
+/* Mobile View (up to 991px) */
+@media (max-width: 991px) {
     .section-padding {
         padding: 3.5rem 0;
     }
