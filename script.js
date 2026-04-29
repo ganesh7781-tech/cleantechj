@@ -32,6 +32,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Mobile Dropdown Toggle
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        const link = dropdown.querySelector('.nav-link');
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+                
+                // Optional: Close other dropdowns
+                dropdowns.forEach(other => {
+                    if (other !== dropdown) other.classList.remove('active');
+                });
+            }
+        });
+    });
+
     // Add staggered delay to reveal elements in grids BEFORE observing
     document.querySelectorAll('.services-grid, .values-grid').forEach(grid => {
         const children = grid.children;
