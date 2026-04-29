@@ -131,7 +131,7 @@ img {
 }
 
 .section-padding {
-    padding: 0;
+    padding: 3rem 0;
 }
 
 .bg-dark {
@@ -946,7 +946,17 @@ img {
 }
 
 .footer-logo {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-brand-name {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: var(--font-heading);
 }
 
 .footer-logo img {
@@ -1234,7 +1244,7 @@ img {
 /* Mobile View (up to 991px) */
 @media (max-width: 991px) {
     .section-padding {
-        padding: 0;
+        padding: 3.5rem 0;
     }
 
     .hero {
