@@ -3,28 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Clean Biotech</title>
+    <title>News & Events | Clean Biotech</title>
+    <meta name="description" content="Latest news, events and updates from Clean Biotech Pvt Ltd on sustainable waste management.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <style>
-        .page-header { padding-top: 140px; padding-bottom: 30px; background: var(--color-bg-dark); color: white; text-align: center; }
-        .page-title { font-size: 2.2rem; margin-bottom: 0.5rem; }
-        .content-section { max-width: 900px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; text-align: center; min-height: 40vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-        .content-section h3 { margin-bottom: 1rem; color: var(--color-primary); }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        .empty-state { text-align: center; padding: 4rem 2rem; }
+        .empty-state i { font-size: 4rem; color: #d1d5db; margin-bottom: 1rem; display: block; }
+        .empty-state h3 { color: var(--color-text-dark); margin-bottom: 0.5rem; }
+        .empty-state p { color: var(--color-text-muted); }
     </style>
+    <link rel="icon" type="image/webp" href="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-info">
+                    <a href="tel:+919130220077"><i class="ph ph-phone"></i> +91 9130220077 / 9112220077</a>
+                    <a href="mailto:cleanbiotechpvtltd@gmail.com"><i class="ph ph-envelope"></i> cleanbiotechpvtltd@gmail.com</a>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
     <header id="navbar" class="scrolled">
         <div class="container nav-container">
             <a href="index.html" class="logo"><img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo"></a>
             <button class="mobile-toggle" aria-label="Toggle menu"><i class="ph ph-list"></i></button>
             <nav class="nav-menu">
                 <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
                     <li><a href="about-us.html" class="nav-link">ABOUT US</a></li>
-                    <li><a href="waste-management-services.html" class="nav-link">WASTE MANAGEMENT SERVICES</a></li>
+                    <li><a href="waste-management-services.html" class="nav-link">WASTE MANAGEMENT</a></li>
                     <li class="dropdown">
                         <a href="#" class="nav-link">RECYCLED PRODUCTS</a>
                         <ul class="dropdown-menu">
@@ -36,7 +66,7 @@
                     <li class="dropdown">
                         <a href="#" class="nav-link dots-dropdown-btn"><i class="ph-bold ph-dots-three-vertical"></i></a>
                         <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="blog.html">News and Events</a></li>
+                            <li><a href="blog.html" class="active">News and Events</a></li>
                             <li><a href="about-us.html">Brochure</a></li>
                             <li><a href="gallery-2.html">Gallery</a></li>
                         </ul>
@@ -46,36 +76,46 @@
         </div>
     </header>
 
-    <div class="page-header">
+    <!-- Page Hero -->
+    
+    <div class="inner-hero-title-bar">
         <div class="container">
-            <h1 class="page-title">Our <span class="text-highlight">Blog</span></h1>
-            <p class="text-gray">Latest news and insights from the industry.</p>
+            <h1>News & <span style="color:rgba(255,255,255,0.75);">Events</span></h1>
         </div>
     </div>
 
-    <section class="section-padding">
-        <div class="container content-section">
-            <i class="ph ph-article" style="font-size: 4rem; color: #d1d5db; margin-bottom: 1rem;"></i>
-            <h3>No posts found</h3>
-            <p>Check back soon for the latest updates on sustainable practices and waste management news.</p>
+    <!-- Content -->
+    <section class="inner-page-body">
+        <div class="container">
+            <div class="inner-main">
+                <h2>Latest News & Events</h2>
+
+                <div class="empty-state">
+                    <i class="ph ph-article"></i>
+                    <h3>No posts found</h3>
+                    <p>Check back soon for the latest updates on sustainable practices and waste management news.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col brand-col">
-                    <a href="#" class="logo footer-logo">
+                    <a href="index.html" class="logo footer-logo">
                         <img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo">
-                    </a><h3 class="footer-brand-name">Clean Biotech Pvt Ltd</h3>
+                    </a>
+                    <h3 class="footer-brand-name">Clean Biotech Pvt Ltd</h3>
                     <p class="footer-desc">Providing exceptional service to our customers, eliminating pollution, and guiding industries towards a sustainable future.</p>
                     <div class="social-links">
-                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
                         <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
                     </div>
                 </div>
-
                 <div class="footer-col">
                     <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
@@ -83,24 +123,33 @@
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="waste-management-services.html">Waste Management</a></li>
                         <li><a href="recycled-plastic-products.html">Recycled Products</a></li>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="waste-management-services.html">Industrial Waste</a></li>
+                        <li><a href="recycled-plastic-granules.html">Plastic Granules</a></li>
+                        <li><a href="recycled-plastic-products.html">Plastic Products</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
                         <li><a href="gallery-2.html">Gallery</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h4 class="footer-heading">Contact Info</h4>
                     <ul class="contact-info">
                         <li>
                             <i class="ph-fill ph-map-pin"></i>
-                            <div><strong>Factory Address:</strong> Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506</div>
+                            <div><strong>Factory:</strong> Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506, Maharashtra, India.</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-buildings"></i>
-                            <div><strong>Regd. Office:</strong> 21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Thane (W) - 400604</div>
+                            <div><strong>Office:</strong> 21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Raghunath Nagar, Thane (W) - 400604, Maharashtra, India.</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-phone"></i>
-                            <div><strong>Phone:</strong> 9130220077 / 9112220077</div>
+                            <div><strong>Phone:</strong> +91 9130220077 / 9112220077</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-envelope-simple"></i>
@@ -109,22 +158,34 @@
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <div class="copyright">
-                    © 2026 Clean Bio Tech LTD. All Rights Reserved.
-                </div>
-                <div class="credits">
-                    Designed for <span class="text-highlight">Industrial Excellence</span>
-                </div>
+                <div class="copyright">© 2026 Clean Bio Tech LTD. All Rights Reserved.</div>
+                <div class="credits">Designed for <span class="text-highlight">Maestloper media</span></div>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <div class="fab-options">
+            <a href="https://wa.me/919130220077" class="fab-option whatsapp" target="_blank">
+                <i class="ph-fill ph-whatsapp-logo"></i>
+                <span>WhatsApp Us</span>
+            </a>
+            <a href="tel:+919130220077" class="fab-option phone">
+                <i class="ph-fill ph-phone-call"></i>
+                <span>Call Us</span>
+            </a>
+            <a href="sms:+919130220077" class="fab-option sms">
+                <i class="ph-fill ph-chat-text"></i>
+                <span>SMS Message</span>
+            </a>
+        </div>
+        <div class="fab-main">
+            <i class="ph-fill ph-chat-circle-dots"></i>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-

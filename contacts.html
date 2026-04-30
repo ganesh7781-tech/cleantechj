@@ -4,37 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Clean Biotech</title>
+    <meta name="description" content="Contact Clean Biotech Pvt Ltd for industrial waste management services. Factory at MIDC Tarapur, Office at Thane.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <style>
-        .page-header { padding-top: 140px; padding-bottom: 30px; background: var(--color-bg-dark); color: white; text-align: center; }
-        .page-title { font-size: 2.2rem; margin-bottom: 0.5rem; }
-        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding-top: 4rem; padding-bottom: 4rem; }
-        @media(max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
-        .contact-info-card { background: var(--color-bg-light); padding: 2rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid var(--color-primary); box-shadow: var(--shadow-sm); transition: var(--transition-fast); }
-        .contact-info-card:hover { transform: translateX(5px); box-shadow: var(--shadow-md); border-color: var(--color-primary-dark); }
-        .contact-info-card h3 { color: var(--color-text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; }
-        .contact-info-card i { color: var(--color-primary); font-size: 1.5rem; }
-        .contact-info-card p { margin: 0; color: #4B5563; line-height: 1.5; font-size: 0.95rem; }
         
-        .contact-form { display: flex; flex-direction: column; gap: 1rem; }
-        .contact-form input, .contact-form textarea { padding: 1rem; border: 1px solid #e5e7eb; border-radius: 6px; font-family: var(--font-body); font-size: 1rem; width: 100%; transition: var(--transition-fast); background: #f9fafb; }
-        .contact-form input:focus, .contact-form textarea:focus { border-color: var(--color-primary); background: white; outline: none; box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1); }
-        .contact-form textarea { resize: vertical; min-height: 150px; }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem; }
+        .contact-info-card { background: #f8fafc; padding: 1.5rem; border-radius: 4px; margin-bottom: 1rem; border-left: 4px solid var(--color-primary); }
+        .contact-info-card h3 { color: var(--color-text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-size: 1rem; }
+        .contact-info-card i { color: var(--color-primary); font-size: 1.2rem; }
+        .contact-info-card p { margin: 0; color: var(--color-text-main); font-size: 0.95rem; line-height: 1.6; }
+        .map-container { border-radius: 4px; overflow: hidden; border: 1px solid var(--color-border); height: 350px; position: relative; }
+        .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .contact-form-box { background: #f8fafc; padding: 2rem; border-radius: 4px; margin-top: 2.5rem; }
+        .contact-form-box h3 { color: var(--color-text-dark); margin-bottom: 1.5rem; font-size: 1.2rem; }
+        .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1.5rem; }
+        .contact-form .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+        .contact-form .full-width { grid-column: span 2; }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            padding: 0.85rem 1rem; border: 1px solid var(--color-border); border-radius: 4px;
+            font-family: var(--font-body); font-size: 0.95rem; width: 100%; background: white;
+            transition: border-color 0.2s; color: var(--color-text-dark);
+        }
+        .contact-form input:focus, .contact-form textarea:focus { border-color: var(--color-primary); outline: none; }
+        .contact-form textarea { resize: vertical; min-height: 140px; }
+        .contact-form .btn-submit { grid-column: span 2; width: fit-content; padding: 1rem 2.5rem; }
+        @media (max-width: 768px) { .contact-layout { grid-template-columns: 1fr; } .contact-form { grid-template-columns: 1fr; } .contact-form .btn-submit { width: 100%; } }
     </style>
+    <link rel="icon" type="image/webp" href="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-info">
+                    <a href="tel:+919130220077"><i class="ph ph-phone"></i> +91 9130220077 / 9112220077</a>
+                    <a href="mailto:cleanbiotechpvtltd@gmail.com"><i class="ph ph-envelope"></i> cleanbiotechpvtltd@gmail.com</a>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
     <header id="navbar" class="scrolled">
         <div class="container nav-container">
             <a href="index.html" class="logo"><img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo"></a>
             <button class="mobile-toggle" aria-label="Toggle menu"><i class="ph ph-list"></i></button>
             <nav class="nav-menu">
                 <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
                     <li><a href="about-us.html" class="nav-link">ABOUT US</a></li>
-                    <li><a href="waste-management-services.html" class="nav-link">WASTE MANAGEMENT SERVICES</a></li>
+                    <li><a href="waste-management-services.html" class="nav-link">WASTE MANAGEMENT</a></li>
                     <li class="dropdown">
                         <a href="#" class="nav-link">RECYCLED PRODUCTS</a>
                         <ul class="dropdown-menu">
@@ -42,7 +80,7 @@
                             <li><a href="recycled-plastic-granules.html">Recycled Plastic Granules</a></li>
                         </ul>
                     </li>
-                    <li><a href="contacts.html" class="nav-link">CONTACT US</a></li>
+                    <li><a href="contacts.html" class="nav-link active">CONTACT US</a></li>
                     <li class="dropdown">
                         <a href="#" class="nav-link dots-dropdown-btn"><i class="ph-bold ph-dots-three-vertical"></i></a>
                         <ul class="dropdown-menu dropdown-menu-right">
@@ -56,85 +94,92 @@
         </div>
     </header>
 
-    <div class="page-header">
+    <!-- Page Hero -->
+    
+    <div class="inner-hero-title-bar">
         <div class="container">
-            <h1 class="page-title">Contact <span class="text-highlight">Us</span></h1>
-            <p class="text-gray">Get in touch for sustainable solutions and inquiries.</p>
+            <h1>Contact <span style="color:rgba(255,255,255,0.75);">Us</span></h1>
         </div>
     </div>
 
-    <section class="section-padding">
+    <!-- Content -->
+    <section class="inner-page-body">
         <div class="container">
-            <div class="contact-grid">
-                <!-- Contact Details -->
-                <div>
-                    <h2 class="section-title">How to Find <span class="text-highlight">Us?</span></h2>
-                    <p style="margin-bottom: 2rem;">Contact us now. We are available to answer your questions and provide detailed information about our recycling and industrial waste management services.</p>
-                    
-                    <div class="contact-info-card">
-                        <h3><i class="ph-fill ph-buildings"></i> Registered Office</h3>
-                        <p>21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Raghunath Nagar, Thane (W) - 400604, Maharashtra, India.</p>
+            <div class="inner-main">
+                <h2>Get In Touch</h2>
+                <p>Contact us now. We are available to answer your questions and provide detailed information about our recycling and industrial waste management services.</p>
+
+                <div class="contact-layout">
+                    <!-- Left: Info Cards -->
+                    <div>
+                        <div class="contact-info-card">
+                            <h3><i class="ph-fill ph-buildings"></i> Registered Office</h3>
+                            <p>21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Raghunath Nagar, Thane (W) - 400604, Maharashtra, India.</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h3><i class="ph-fill ph-factory"></i> Factory Address</h3>
+                            <p>Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506, Maharashtra, India.</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h3><i class="ph-fill ph-phone-call"></i> Contacts</h3>
+                            <p>9130220077 / 9112220077</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h3><i class="ph-fill ph-envelope-simple"></i> Email Us</h3>
+                            <p><a href="mailto:cleanbiotechpvtltd@gmail.com" style="color: var(--color-primary);">cleanbiotechpvtltd@gmail.com</a></p>
+                        </div>
                     </div>
 
-                    <div class="contact-info-card">
-                        <h3><i class="ph-fill ph-factory"></i> Factory Address</h3>
-                        <p>Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506, Maharashtra, India.</p>
+                    <!-- Right: Map -->
+                    <div>
+                        <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Our Location</h3>
+                        <p style="margin-bottom: 1rem;">Find our factory directly via the interactive map below.</p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps?cid=8181521098537307721&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA&hl=en&gl=IN&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                    
-                    <div class="contact-info-card">
-                        <h3><i class="ph-fill ph-phone-call"></i> Contacts</h3>
-                        <p>9130220077 / 9112220077</p>
-                    </div>
+                </div>
 
-                    <div class="contact-info-card">
-                        <h3><i class="ph-fill ph-envelope-simple"></i> Email Us</h3>
-                        <p><a href="mailto:cleanbiotechpvtltd@gmail.com" class="text-highlight">cleanbiotechpvtltd@gmail.com</a></p>
-                    </div>
+                <!-- Contact Form -->
+                <div class="contact-form-box">
+                    <h3>Drop Us a Line</h3>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message <i class="ph ph-paper-plane-tilt"></i></button>
+                    </form>
                 </div>
-                
-                <!-- Google Map -->
-                <div style="display: flex; flex-direction: column;">
-                    <h2 class="section-title">Our <span class="text-highlight">Location</span></h2>
-                    <p style="margin-bottom: 2rem;">Find our factory directly via the interactive map below.</p>
-                    <div class="map-container" style="border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid rgba(0,0,0,0.05); flex-grow: 1; min-height: 400px; position: relative;">
-                        <iframe src="https://www.google.com/maps?cid=8181521098537307721&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA&hl=en&gl=IN&output=embed" width="100%" height="100%" style="border:0; position: absolute; top:0; left:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Contact Form -->
-            <div style="margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center; background: white; padding: 3rem; border-radius: 12px; box-shadow: var(--shadow-sm); border: 1px solid #f3f4f6;">
-                <h2 class="section-title">Drop us a <span class="text-highlight">Line</span></h2>
-                <p style="margin-bottom: 2.5rem; color: #4B5563;">Feel free to contact us via the form below. We will get back to you promptly.</p>
-                
-                <form class="contact-form" action="#" method="POST" style="text-align: left;">
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <input type="text" placeholder="Subject" style="margin-bottom: 1.5rem;" required>
-                    <textarea placeholder="Your Message" required style="margin-bottom: 1.5rem;"></textarea>
-                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; border-radius: 6px;">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col brand-col">
-                    <a href="#" class="logo footer-logo">
+                    <a href="index.html" class="logo footer-logo">
                         <img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo">
-                    </a><h3 class="footer-brand-name">Clean Biotech Pvt Ltd</h3>
+                    </a>
+                    <h3 class="footer-brand-name">Clean Biotech Pvt Ltd</h3>
                     <p class="footer-desc">Providing exceptional service to our customers, eliminating pollution, and guiding industries towards a sustainable future.</p>
                     <div class="social-links">
-                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
                         <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
                     </div>
                 </div>
-
                 <div class="footer-col">
                     <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
@@ -142,24 +187,33 @@
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="waste-management-services.html">Waste Management</a></li>
                         <li><a href="recycled-plastic-products.html">Recycled Products</a></li>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="waste-management-services.html">Industrial Waste</a></li>
+                        <li><a href="recycled-plastic-granules.html">Plastic Granules</a></li>
+                        <li><a href="recycled-plastic-products.html">Plastic Products</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
                         <li><a href="gallery-2.html">Gallery</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h4 class="footer-heading">Contact Info</h4>
                     <ul class="contact-info">
                         <li>
                             <i class="ph-fill ph-map-pin"></i>
-                            <div><strong>Factory Address:</strong> Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506</div>
+                            <div><strong>Factory:</strong> Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506, Maharashtra, India.</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-buildings"></i>
-                            <div><strong>Regd. Office:</strong> 21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Thane (W) - 400604</div>
+                            <div><strong>Office:</strong> 21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Raghunath Nagar, Thane (W) - 400604, Maharashtra, India.</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-phone"></i>
-                            <div><strong>Phone:</strong> 9130220077 / 9112220077</div>
+                            <div><strong>Phone:</strong> +91 9130220077 / 9112220077</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-envelope-simple"></i>
@@ -168,22 +222,34 @@
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <div class="copyright">
-                    © 2026 Clean Bio Tech LTD. All Rights Reserved.
-                </div>
-                <div class="credits">
-                    Designed for <span class="text-highlight">Industrial Excellence</span>
-                </div>
+                <div class="copyright">© 2026 Clean Bio Tech LTD. All Rights Reserved.</div>
+                <div class="credits">Designed for <span class="text-highlight">Maestloper media</span></div>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <div class="fab-options">
+            <a href="https://wa.me/919130220077" class="fab-option whatsapp" target="_blank">
+                <i class="ph-fill ph-whatsapp-logo"></i>
+                <span>WhatsApp Us</span>
+            </a>
+            <a href="tel:+919130220077" class="fab-option phone">
+                <i class="ph-fill ph-phone-call"></i>
+                <span>Call Us</span>
+            </a>
+            <a href="sms:+919130220077" class="fab-option sms">
+                <i class="ph-fill ph-chat-text"></i>
+                <span>SMS Message</span>
+            </a>
+        </div>
+        <div class="fab-main">
+            <i class="ph-fill ph-chat-circle-dots"></i>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-

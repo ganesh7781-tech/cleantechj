@@ -4,30 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waste Management Services | Clean Biotech</title>
+    <meta name="description" content="Clean Biotech provides MPCB authorized waste management services including solid & liquid waste, plastic recycling and EHS management.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <style>
-        .page-header { padding-top: 140px; padding-bottom: 30px; background: var(--color-bg-dark); color: white; text-align: center; }
-        .page-title { font-size: 2.2rem; margin-bottom: 0.5rem; }
-        .content-section { max-width: 900px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; }
-        .content-section h3 { margin-top: 2.5rem; margin-bottom: 1rem; color: var(--color-primary); }
-        .content-section p { margin-bottom: 1.5rem; font-size: 1.05rem; color: #4B5563; }
-        .content-list { margin-bottom: 2rem; padding-left: 1.5rem; }
-        .content-list li { margin-bottom: 0.5rem; color: #4B5563; }
+        
+        
+        
+        
+        
+        
+        
+        
+        .inner-main .feature-img { width: 100%; height: 220px; object-fit: contain; background: #f8fafc; border-radius: 4px; margin-bottom: 2rem; }
+        
+        
+        
+        
+        
+        
+        
+        
+        .process-steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; }
+        .process-step-card { background: #f8fafc; border: 1px solid var(--color-border); border-radius: 4px; padding: 1.25rem; text-align: center; }
+        .process-step-card i { font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem; display: block; }
+        .process-step-card h5 { margin: 0 0 0.25rem; font-size: 0.95rem; color: var(--color-text-dark); }
+        .process-step-card p { margin: 0; font-size: 0.85rem; color: var(--color-text-muted); }
+        @media (max-width: 600px) { .process-steps-grid { grid-template-columns: 1fr 1fr; } }
     </style>
+    <link rel="icon" type="image/webp" href="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-info">
+                    <a href="tel:+919130220077"><i class="ph ph-phone"></i> +91 9130220077 / 9112220077</a>
+                    <a href="mailto:cleanbiotechpvtltd@gmail.com"><i class="ph ph-envelope"></i> cleanbiotechpvtltd@gmail.com</a>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
     <header id="navbar" class="scrolled">
         <div class="container nav-container">
             <a href="index.html" class="logo"><img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo"></a>
             <button class="mobile-toggle" aria-label="Toggle menu"><i class="ph ph-list"></i></button>
             <nav class="nav-menu">
                 <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
                     <li><a href="about-us.html" class="nav-link">ABOUT US</a></li>
-                    <li><a href="waste-management-services.html" class="nav-link">WASTE MANAGEMENT SERVICES</a></li>
+                    <li><a href="waste-management-services.html" class="nav-link active">WASTE MANAGEMENT</a></li>
                     <li class="dropdown">
                         <a href="#" class="nav-link">RECYCLED PRODUCTS</a>
                         <ul class="dropdown-menu">
@@ -49,59 +86,106 @@
         </div>
     </header>
 
-    <div class="page-header">
+    <!-- Page Hero -->
+    
+    <div class="inner-hero-title-bar">
         <div class="container">
-            <h1 class="page-title">Waste Management <span class="text-highlight">Services</span></h1>
-            <p class="text-gray">End-to-end industrial waste processing for a cleaner tomorrow.</p>
+            <h1>Waste Management <span style="color:rgba(255,255,255,0.75);">Services</span></h1>
         </div>
     </div>
 
-    <section class="section-padding">
-        <div class="container content-section">
-            <img src="https://cleanbiotech.in/wp-content/uploads/2021/02/9f5ca16ba6a64eedb0c196c1faa9fe65-.jpg" alt="Waste Management" class="content-inline-img-right">
-            <h3>Honored as a Pioneer in Plastic Waste Management</h3>
-            <p>For almost 10 years, we’ve been at the forefront of plastic waste recycling. CLEAN BIOTECH Industries, founded in 2020, is a Palghar district-based company that recycles various sorts of plastic waste and is one of India’s leading polymer waste recyclers.</p>
-            <p>CLEAN BIOTECH has been internationally recognised as a pioneer in the field of plastic waste management over the past 10 years, having begun by making various forms of reprocessed plastic granules from waste or scrap.</p>
+    <!-- Content -->
+    <section class="inner-page-body">
+        <div class="container">
+            <div class="inner-main">
+                <img src="https://cleanbiotech.in/wp-content/uploads/2021/02/9f5ca16ba6a64eedb0c196c1faa9fe65-.jpg" alt="Waste Management" class="feature-img">
 
-            <h3>Over 100 Waste Management Training Programs</h3>
-            <p>Over 100 training and awareness events, as well as beach cleanup campaigns, have been held across India on waste management challenges.</p>
-            <p>We’ve also held social awareness programmes on plastic trash management at non-governmental organisations, businesses, schools, hospitals, societies, marine academies, and government agencies. We take great effort in teaching rag-pickers and collection centre employees to properly classify plastics so that they can be recycled.</p>
+                <h2>Waste Management Services</h2>
+                <p>End-to-end industrial waste processing for a cleaner tomorrow. We are MPCB authorized to handle all categories of industrial, hazardous, and non-hazardous waste.</p>
 
-            <h3>Wide Network Throughout India</h3>
-            <p>CLEAN BIOTECH Industries has a partnership with Municipal Corporations in all states where large amounts of plastic trash are created. We have a pan-India presence, with a network of more than 40 collection Centers maintained by a number of collection partners around the country. The majority of our partners have over 20 years of industry expertise, as well as well-established relationships and a great approach in the surrounding areas.</p>
-            <p>We collect both recyclable and non-recyclable plastic garbage every day, which is then processed at our many re-processing facilities across India. Non-recyclable waste is also transferred to environmentally sound end-of-life disposal facilities such as cement kilns or waste-to-energy plants.</p>
-            <p>MLP and Non-MLP Collection Waste is gathered by waste collectors, aggregators, traders, and societies in these locations, and our collection managers work on the ground with rag pickers to secure the best returns on the waste they collect. Every rag picker goes through a thorough training program in which they learn how to get the most out of trash and how to properly segregate rubbish according to their type.</p>
+                <div class="process-steps-grid">
+                    <div class="process-step-card">
+                        <i class="ph ph-truck"></i>
+                        <h5>Collecting & Logistics</h5>
+                        <p>Authorized collection from your site</p>
+                    </div>
+                    <div class="process-step-card">
+                        <i class="ph ph-funnel"></i>
+                        <h5>Sorting & Grading</h5>
+                        <p>Detailed waste classification</p>
+                    </div>
+                    <div class="process-step-card">
+                        <i class="ph ph-factory"></i>
+                        <h5>Processing & Disposal</h5>
+                        <p>Eco-friendly processing</p>
+                    </div>
+                    <div class="process-step-card">
+                        <i class="ph ph-recycle"></i>
+                        <h5>Recycling</h5>
+                        <p>Material recovery & reuse</p>
+                    </div>
+                    <div class="process-step-card">
+                        <i class="ph ph-certificate"></i>
+                        <h5>Certification</h5>
+                        <p>Official MPCB compliance docs</p>
+                    </div>
+                    <div class="process-step-card">
+                        <i class="ph ph-file-text"></i>
+                        <h5>Audit Report</h5>
+                        <p>Monthly transparency reports</p>
+                    </div>
+                </div>
 
-            <h3>Transparency and Traceability</h3>
-            <p>From the time of collection till disposal, we provide thorough monthly reports on all papers. The best policy, in our opinion, is to work with transparency.</p>
-            <ul class="content-list">
-                <li>To avoid duplication, all documents are provided.</li>
-                <li>At the centre, third-party audits are performed to ensure that plastic waste is collected reliably.</li>
-                <li>Third-party audits are conducted at recycling facilities to ensure that proper recycling procedures are followed.</li>
-                <li>Details about transportation have been supplied.</li>
-            </ul>
-            <p>Invoices from the Collection Center to the Recycling Plant, Weight Receipt/Copy of Transport, Inward Details at the Recycling Plant, Payment Receipt To Centers, Certificate Of Processing, Process Flow Diagram.</p>
+                <h3>Honored as a Pioneer in Plastic Waste Management</h3>
+                <p>For almost 10 years, we've been at the forefront of plastic waste recycling. CLEAN BIOTECH Industries, founded in 2020, is a Palghar district-based company that recycles various sorts of plastic waste and is one of India's leading polymer waste recyclers.</p>
+                <p>CLEAN BIOTECH has been internationally recognised as a pioneer in the field of plastic waste management over the past 10 years, having begun by making various forms of reprocessed plastic granules from waste or scrap.</p>
 
-            <h3>Swachh Bharat Abhiyan</h3>
-            <p>The ‘Swachh Bharat Abhiyan’ is a government of India campaign to ensure absolute cleanliness across the country. We’ve developed end-to-end solutions for waste plastic that is being wasted in large quantities every day throughout our years in the industry. We are proud to be one of the companies actively involved in the ‘Swachh Bharat Abhiyan’ an initiative by the Government of India to ensure total cleanliness across the country, with a proper training module in place in respect to collection, segregation, bailing, weighing, recycling, and processing of such waste from streets.</p>
+                <h3>Over 100 Waste Management Training Programs</h3>
+                <p>Over 100 training and awareness events, as well as beach cleanup campaigns, have been held across India on waste management challenges.</p>
+                <p>We've also held social awareness programmes on plastic trash management at non-governmental organisations, businesses, schools, hospitals, societies, marine academies, and government agencies. We take great effort in teaching rag-pickers and collection centre employees to properly classify plastics so that they can be recycled.</p>
+
+                <h3>Wide Network Throughout India</h3>
+                <p>CLEAN BIOTECH Industries has a partnership with Municipal Corporations in all states where large amounts of plastic trash are created. We have a pan-India presence, with a network of more than 40 collection Centers maintained by a number of collection partners around the country.</p>
+                <p>We collect both recyclable and non-recyclable plastic garbage every day, which is then processed at our many re-processing facilities across India. Non-recyclable waste is also transferred to environmentally sound end-of-life disposal facilities such as cement kilns or waste-to-energy plants.</p>
+                <p>MLP and Non-MLP Collection Waste is gathered by waste collectors, aggregators, traders, and societies in these locations, and our collection managers work on the ground with rag pickers to secure the best returns on the waste they collect.</p>
+
+                <h3>Transparency and Traceability</h3>
+                <p>From the time of collection till disposal, we provide thorough monthly reports on all papers. The best policy, in our opinion, is to work with transparency.</p>
+                <ul class="content-list">
+                    <li>To avoid duplication, all documents are provided.</li>
+                    <li>At the centre, third-party audits are performed to ensure that plastic waste is collected reliably.</li>
+                    <li>Third-party audits are conducted at recycling facilities to ensure that proper recycling procedures are followed.</li>
+                    <li>Details about transportation have been supplied.</li>
+                </ul>
+                <p>Invoices from the Collection Center to the Recycling Plant, Weight Receipt/Copy of Transport, Inward Details at the Recycling Plant, Payment Receipt To Centers, Certificate Of Processing, Process Flow Diagram.</p>
+
+                <h3>Swachh Bharat Abhiyan</h3>
+                <p>The 'Swachh Bharat Abhiyan' is a government of India campaign to ensure absolute cleanliness across the country. We've developed end-to-end solutions for waste plastic that is being wasted in large quantities every day throughout our years in the industry. We are proud to be one of the companies actively involved in the 'Swachh Bharat Abhiyan' — an initiative by the Government of India to ensure total cleanliness across the country.</p>
+
+                <div class="highlight-box">
+                    <p><i class="ph ph-shield-check" style="color:var(--color-primary);margin-right:0.5rem;"></i> MPCB Authorized — All our waste collection and processing operations are fully compliant with Maharashtra Pollution Control Board regulations.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col brand-col">
-                    <a href="#" class="logo footer-logo">
+                    <a href="index.html" class="logo footer-logo">
                         <img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo">
-                    </a><h3 class="footer-brand-name">Clean Biotech Pvt Ltd</h3>
+                    </a>
+                    <h3 class="footer-brand-name">Clean Biotech Pvt Ltd</h3>
                     <p class="footer-desc">Providing exceptional service to our customers, eliminating pollution, and guiding industries towards a sustainable future.</p>
                     <div class="social-links">
-                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
                         <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
                     </div>
                 </div>
-
                 <div class="footer-col">
                     <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
@@ -109,24 +193,33 @@
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="waste-management-services.html">Waste Management</a></li>
                         <li><a href="recycled-plastic-products.html">Recycled Products</a></li>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="waste-management-services.html">Industrial Waste</a></li>
+                        <li><a href="recycled-plastic-granules.html">Plastic Granules</a></li>
+                        <li><a href="recycled-plastic-products.html">Plastic Products</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
                         <li><a href="gallery-2.html">Gallery</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h4 class="footer-heading">Contact Info</h4>
                     <ul class="contact-info">
                         <li>
                             <i class="ph-fill ph-map-pin"></i>
-                            <div><strong>Factory Address:</strong> Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506</div>
+                            <div><strong>Factory:</strong> Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506, Maharashtra, India.</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-buildings"></i>
-                            <div><strong>Regd. Office:</strong> 21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Thane (W) - 400604</div>
+                            <div><strong>Office:</strong> 21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Raghunath Nagar, Thane (W) - 400604, Maharashtra, India.</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-phone"></i>
-                            <div><strong>Phone:</strong> 9130220077 / 9112220077</div>
+                            <div><strong>Phone:</strong> +91 9130220077 / 9112220077</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-envelope-simple"></i>
@@ -135,22 +228,34 @@
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <div class="copyright">
-                    © 2026 Clean Bio Tech LTD. All Rights Reserved.
-                </div>
-                <div class="credits">
-                    Designed for <span class="text-highlight">Industrial Excellence</span>
-                </div>
+                <div class="copyright">© 2026 Clean Bio Tech LTD. All Rights Reserved.</div>
+                <div class="credits">Designed for <span class="text-highlight">Maestloper media</span></div>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <div class="fab-options">
+            <a href="https://wa.me/919130220077" class="fab-option whatsapp" target="_blank">
+                <i class="ph-fill ph-whatsapp-logo"></i>
+                <span>WhatsApp Us</span>
+            </a>
+            <a href="tel:+919130220077" class="fab-option phone">
+                <i class="ph-fill ph-phone-call"></i>
+                <span>Call Us</span>
+            </a>
+            <a href="sms:+919130220077" class="fab-option sms">
+                <i class="ph-fill ph-chat-text"></i>
+                <span>SMS Message</span>
+            </a>
+        </div>
+        <div class="fab-main">
+            <i class="ph-fill ph-chat-circle-dots"></i>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-

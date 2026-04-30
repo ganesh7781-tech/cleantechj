@@ -9,14 +9,35 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="icon" type="image/webp" href="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-info">
+                    <a href="tel:+919130220077"><i class="ph ph-phone"></i> +91 9130220077 / 9112220077</a>
+                    <a href="mailto:cleanbiotechpvtltd@gmail.com"><i class="ph ph-envelope"></i> cleanbiotechpvtltd@gmail.com</a>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <header id="navbar">
         <div class="container nav-container">
@@ -31,8 +52,9 @@
 
             <nav class="nav-menu">
                 <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">HOME</a></li>
                     <li><a href="about-us.html" class="nav-link">ABOUT US</a></li>
-                    <li><a href="waste-management-services.html" class="nav-link">WASTE MANAGEMENT SERVICES</a></li>
+                    <li><a href="waste-management-services.html" class="nav-link">WASTE MANAGEMENT</a></li>
                     <li class="dropdown">
                         <a href="#" class="nav-link">RECYCLED PRODUCTS</a>
                         <ul class="dropdown-menu">
@@ -54,32 +76,35 @@
         </div>
     </header>
 
+
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background"></div>
+        <!-- Hero Slider Background -->
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1920&q=80')"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=1920&q=80')"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url('https://cleanbiotech.in/wp-content/uploads/2021/07/ehs-800x400.jpg')"></div>
+                </div>
+            </div>
+            <!-- Optional navigation/pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        
         <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Save Environment for <span class="text-highlight">Brighter Future</span></h1>
+                <div class="badge">Environmental Excellence</div>
+                <h1 class="hero-title">Save Environment for <br><span class="text-highlight">Brighter Future</span></h1>
                 <p class="hero-description">We partner with industries to guide sustainable plantation, preserve natural resources, and implement advanced waste management solutions.</p>
                 <div class="hero-actions reveal" style="transition-delay: 0.4s;">
                     <a href="about-us.html" class="btn btn-primary btn-lg">Discover Our Impact <i class="ph ph-arrow-right"></i></a>
-                    <a href="waste-management-services.html" class="btn btn-outline btn-lg">Our Services</a>
-                </div>
-            </div>
-            <div class="hero-stats reveal" style="transition-delay: 0.6s;">
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Compliance</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Support</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">1K+</span>
-                    <span class="stat-label">Trees Planted</span>
+                    <a href="waste-management-services.html" class="btn btn-outline-light btn-lg">Our Services</a>
                 </div>
             </div>
         </div>
@@ -89,10 +114,25 @@
         </div>
     </section>
 
+
     <!-- About Section -->
     <section id="about" class="about section-padding">
         <div class="container">
-            <div class="about-grid">
+            <div class="about-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="about-content reveal" style="text-align: justify; padding-right: 2rem;">
+                    <div class="badge">About Clean Biotech</div>
+                    <h2 class="section-title">Revolutionizing <span class="text-highlight">Industrial Sustainability</span></h2>
+                    <p class="lead-text">Clean Biotech Pvt Ltd is dedicated to guiding industries through the complexities of environmental preservation and sustainable development.</p>
+                    <p>We provide specialized expertise to help companies integrate lush plantations and resource management strategies into their operations, ensuring long-term ecological balance.</p>
+                    
+                    <ul class="feature-list">
+                        <li><i class="ph-fill ph-check-circle"></i> MPCB Authorized Facility Management</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Expert Environment & EHS Consultation</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Sustainable Plantation & Land Development</li>
+                    </ul>
+
+                    <a href="about-us.html" class="btn btn-primary">Read More About Us <i class="ph ph-arrow-right"></i></a>
+                </div>
                 <div class="about-image-wrapper">
                     <div class="about-image-main">
                         <img src="https://cleanbiotech.in/wp-content/uploads/2022/02/Why-you-should-recycle-scrap-metal.jpg" alt="Clean Biotech industrial facility">
@@ -105,40 +145,44 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-content reveal" style="text-align: justify; padding-right: 1rem;">
-                    <h2 class="section-title">Revolutionizing <span class="text-highlight">Industrial Sustainability</span></h2>
-                    <p class="lead-text">Clean Biotech Pvt Ltd is dedicated to guiding industries through the complexities of environmental preservation and sustainable development.</p>
-                    <p>We provide specialized expertise to help companies integrate lush plantations and resource management strategies into their operations, ensuring long-term ecological balance.</p>
-                    
-                    <ul class="feature-list">
-                        <li><i class="ph-fill ph-check-circle"></i> MPCB Authorized Facility Management</li>
-                        <li><i class="ph-fill ph-check-circle"></i> Expert Environment & EHS Consultation</li>
-                        <li><i class="ph-fill ph-check-circle"></i> Sustainable Plantation & Land Development</li>
-                    </ul>
+            </div>
+        </div>
+    </section>
 
-                    <a href="contacts.html" class="btn btn-primary">Partner With Us <i class="ph ph-handshake"></i></a>
+    <!-- Stats Counter Section -->
+    <section class="stats-counter reveal">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-label">Compliance</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">24/7</h3>
+                    <p class="stat-label">Support</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">1K+</h3>
+                    <p class="stat-label">Trees Planted</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">50+</h3>
+                    <p class="stat-label">Happy Clients</p>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Services Section -->
     <section id="services" class="services section-padding bg-light">
         <div class="container">
             <div class="section-header text-center reveal">
-                <div class="badge mx-auto">Core Solutions</div>
-                <h2 class="section-title">Industrial <span class="text-highlight">Services</span></h2>
-                <p class="section-subtitle">We provide comprehensive waste management and safety solutions tailored to your industry's unique needs.</p>
+                <div class="badge mx-auto">Our Expertise</div>
+                <h2 class="section-title">Our Recycling <span class="text-highlight">Services</span></h2>
+                <p class="section-subtitle">Comprehensive waste management and safety solutions tailored to your industry's unique needs.</p>
             </div>
             
-            <div class="intro-text-block" style="max-width: 900px; margin: 0 auto 2.5rem auto; text-align: justify; font-size: 1.1rem; line-height: 1.8; color: #374151; background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--color-primary);">
-                <p style="margin-bottom: 1rem;"><strong>We value our customer</strong> and believe in providing exceptional service to our customers. It is the foundation of business success and we are passionately committed to it.</p>
-                <p style="margin-bottom: 1rem;">CLEAN BIOTECH Pvt Ltd is also engaged in developing lands, occupied by various types of industries reserved for plantation. We have tried and still trying to plant only those plants, which will eliminate and control pollution with ease and accordingly.</p>
-                <p style="margin-bottom: 1rem;">CLEAN BIOTECH Pvt Ltd is having specially dedicated faculty to guide industries regarding plantation and perseverance of the same according to their need and capacity and availability of resources.</p>
-                <p style="margin-bottom: 1rem;">CLEAN BIOTECH Pvt Ltd distributes thousand of trees on every World Environment Day as a token of love as well as responsibility toward Mother Nature for bright and healthy future for new generation.</p>
-                <p>All of above CLEAN BIOTECH Pvt Ltd is committed to its word for <em>“saving nature and environment for better future”</em> and trying to restore this planet. We are authorized by <strong>Maharashtra Pollution Control Board</strong> and carry out our all activities according to guidelines laid by Maharashtra Pollution Control Board to save and preserve the nature.</p>
-            </div>
-
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card">
@@ -149,8 +193,8 @@
                         </div>
                     </div>
                     <div class="service-content">
-                        <h3>Facility Management Service</h3>
-                        <p>Facility Management Services Company aimed at every solution of industrial, commercial sector solutions to solid as well as liquid waste management and recycling / reprocessing (including domestic, industrial and nonindustrial…</p>
+                        <h3>Facility Management</h3>
+                        <p>Solutions to solid and liquid waste management and recycling / reprocessing (including domestic, industrial and nonindustrial…).</p>
                         <a href="waste-management-services.html" class="btn-link">Learn more <i class="ph ph-arrow-right"></i></a>
                     </div>
                 </div>
@@ -164,30 +208,36 @@
                         </div>
                     </div>
                     <div class="service-content">
-                        <h3>Environment, Health & Safety (EHS) Management</h3>
-                        <p>EHS stands for “environment, health, and safety,” and for many companies, a crucial part of their processes is EHS management, meaning the codification and practice of procedures aimed at ensuring…</p>
+                        <h3>EHS Management</h3>
+                        <p>Practices ensuring procedures aimed at ensuring environment, health, and safety for many industrial companies.</p>
                         <a href="waste-management-services.html" class="btn-link">Learn more <i class="ph ph-arrow-right"></i></a>
                     </div>
                 </div>
-            </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" alt="Plastic Granules">
+                        <div class="service-icon">
+                            <i class="ph ph-recycle"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Plastic Granules</h3>
+                        <p>High quality recycled plastic granules manufactured through advanced recycling processes for industrial reuse.</p>
+                        <a href="recycled-plastic-granules.html" class="btn-link">Learn more <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Recycling Process Section -->
-    <section class="recycling-process section-padding reveal" style="border-top: 1px solid #eeeeee;">
-        <div class="container text-center">
-            <h2 class="section-title">Recycling <span class="text-highlight">Process</span></h2>
-            <p style="margin-bottom: 2rem; color: var(--color-text-muted); font-size: 1.1rem;">Learn more about our detailed recycling and process workflows.</p>
-            <a href="recycled-plastic-products.html" class="btn btn-primary btn-lg">Learn more <i class="ph ph-arrow-right"></i></a>
-        </div>
-    </section>
-
-    <!-- Core Values Section -->
-    <section id="values" class="values section-padding bg-light">
+    <!-- Why Choose Us (from Values) -->
+    <section id="why-choose-us" class="section-padding">
         <div class="container">
             <div class="section-header text-center reveal">
-                <h2 class="section-title">Our Core <span class="text-highlight">Values</span></h2>
+                <div class="badge mx-auto">Why Us</div>
+                <h2 class="section-title">Why Choose <span class="text-highlight">Clean Biotech</span></h2>
                 <p class="section-subtitle">The foundation of our business success is our passionate commitment to these principles.</p>
             </div>
 
@@ -197,14 +247,14 @@
                         <i class="ph ph-globe-hemisphere-west"></i>
                     </div>
                     <h4>Service</h4>
-                    <p>To safe guard mother earth and its diversity for safe and healthy future generation.</p>
+                    <p>To safeguard mother earth for safe and healthy future generation.</p>
                 </div>
                 <div class="value-item">
                     <div class="value-icon-wrapper">
                         <i class="ph ph-lightbulb"></i>
                     </div>
                     <h4>Innovation</h4>
-                    <p>We look forward to continuous process developments in order to improve the value we deliver to customers and the performance of our business.</p>
+                    <p>Continuous process developments to improve the value we deliver.</p>
                 </div>
                 <div class="value-item">
                     <div class="value-icon-wrapper">
@@ -218,15 +268,133 @@
                         <i class="ph ph-users"></i>
                     </div>
                     <h4>People</h4>
-                    <p>We are committed to hiring, training, and developing people to their best and providing them with stimulating and rewarding jobs and careers.</p>
+                    <p>Committed to hiring and developing people to their best potential.</p>
                 </div>
                 <div class="value-item">
                     <div class="value-icon-wrapper">
                         <i class="ph ph-trend-up"></i>
                     </div>
                     <h4>Performance</h4>
-                    <p>We intend to excel in our performance and deliver exceptional value of our Stakeholders.</p>
+                    <p>Excel in performance and deliver exceptional value to Stakeholders.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disposal Process Section -->
+    <section id="process" class="section-padding bg-light reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="badge mx-auto">Workflow</div>
+                <h2 class="section-title">Our Disposal <span class="text-highlight">Process</span></h2>
+                <p class="section-subtitle">How we manage and process industrial waste from collection to certification.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-icon">
+                        <i class="ph ph-truck"></i>
+                    </div>
+                    <h4>Pickup</h4>
+                    <p>Authorized collection from site</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </div>
+                    <h4>Sorting</h4>
+                    <p>Detailed waste classification</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon">
+                        <i class="ph ph-factory"></i>
+                    </div>
+                    <h4>Disposal</h4>
+                    <p>Eco-friendly processing</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon">
+                        <i class="ph ph-certificate"></i>
+                    </div>
+                    <h4>Certification</h4>
+                    <p>Official MPCB compliance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waste Management Solution (Text Section) -->
+    <section class="solution-section section-padding">
+        <div class="container">
+            <div class="about-grid" style="grid-template-columns: 1.2fr 0.8fr;">
+                <div class="solution-content reveal">
+                    <div class="badge">Our Commitment</div>
+                    <h2 class="section-title">Waste Management <span class="text-highlight">Solutions</span></h2>
+                    <p style="margin-bottom: 1.5rem; line-height: 1.8; color: var(--color-text-main);"><strong>We value our customer</strong> and believe in providing exceptional service. It is the foundation of business success and we are passionately committed to it.</p>
+                    <p style="margin-bottom: 1.5rem; line-height: 1.8; color: var(--color-text-main);">CLEAN BIOTECH Pvt Ltd is also engaged in developing lands occupied by industries reserved for plantation. We plant species that eliminate and control pollution effectively according to site needs.</p>
+                    
+                    <ul class="check-list">
+                        <li><i class="ph ph-check"></i> Land Development</li>
+                        <li><i class="ph ph-check"></i> Pollution Control</li>
+                        <li><i class="ph ph-check"></i> Resource Optimization</li>
+                        <li><i class="ph ph-check"></i> Sustainable Future</li>
+                    </ul>
+                </div>
+                <div class="solution-image reveal">
+                    <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=800&q=80" alt="Sustainability Solution" style="border-radius: 30px; box-shadow: var(--shadow-xl);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section reveal">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-info">
+                    <div class="badge">Contact Us</div>
+                    <h2>Order Our <span class="text-highlight">Service Online</span></h2>
+                    <p>Get a quote or schedule a pickup for your industrial waste management needs. Our team will get back to you within 24 hours.</p>
+                    <div class="contact-card" style="margin-top: 2rem;">
+                        <div class="contact-item" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="ph ph-phone" style="color: var(--color-primary); font-size: 1.5rem;"></i>
+                            <div>
+                                <h4 style="margin: 0; font-size: 1.1rem;">Call Us</h4>
+                                <p style="margin: 0;">+91 9130220077</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Company Name</label>
+                        <input type="text" placeholder="Your Industry Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="email@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+91 00000 00000">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Type</label>
+                        <select>
+                            <option>Waste Management</option>
+                            <option>EHS Management</option>
+                            <option>Recycled Products</option>
+                            <option>Plantation Services</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Message</label>
+                        <textarea placeholder="How can we help you?"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit" class="btn btn-primary">Submit Request <i class="ph ph-paper-plane-tilt"></i></button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -245,22 +413,57 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <div class="badge mx-auto">Common Questions</div>
+                <h2 class="section-title">Frequently Asked <span class="text-highlight">Questions</span></h2>
+                <p class="section-subtitle">Find answers to common queries about our services and compliance.</p>
+            </div>
+
+            <div class="faq-grid reveal">
+                <div class="faq-col">
+                    <div class="faq-item">
+                        <div class="faq-question">What is MPCB authorization? <i class="ph ph-plus"></i></div>
+                        <div class="faq-answer">It is the official permission from the Maharashtra Pollution Control Board to handle industrial waste and environmental services.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Do you provide recycling certificates? <i class="ph ph-plus"></i></div>
+                        <div class="faq-answer">Yes, we provide official recycling and disposal certificates for all processed waste materials.</div>
+                    </div>
+                </div>
+                <div class="faq-col">
+                    <div class="faq-item">
+                        <div class="faq-question">What types of waste do you manage? <i class="ph ph-plus"></i></div>
+                        <div class="faq-answer">We handle solid waste, liquid waste, plastic recycling, and provide EHS management for industrial facilities.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How can I schedule a pickup? <i class="ph ph-plus"></i></div>
+                        <div class="faq-answer">You can use our online form above or call us directly to schedule a waste collection from your site.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
+    
     <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col brand-col">
-                    <a href="#" class="logo footer-logo">
+                    <a href="index.html" class="logo footer-logo">
                         <img src="http://cleanbiotech.in/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-19-at-4.36.10-PM-1.jpeg.webp" alt="Clean Biotech Logo">
-                    </a><h3 class="footer-brand-name">Clean Biotech Pvt Ltd</h3>
+                    </a>
+                    <h3 class="footer-brand-name">Clean Biotech Pvt Ltd</h3>
                     <p class="footer-desc">Providing exceptional service to our customers, eliminating pollution, and guiding industries towards a sustainable future.</p>
                     <div class="social-links">
-                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
                         <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
                     </div>
                 </div>
-
                 <div class="footer-col">
                     <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
@@ -268,24 +471,33 @@
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="waste-management-services.html">Waste Management</a></li>
                         <li><a href="recycled-plastic-products.html">Recycled Products</a></li>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="waste-management-services.html">Industrial Waste</a></li>
+                        <li><a href="recycled-plastic-granules.html">Plastic Granules</a></li>
+                        <li><a href="recycled-plastic-products.html">Plastic Products</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
                         <li><a href="gallery-2.html">Gallery</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h4 class="footer-heading">Contact Info</h4>
                     <ul class="contact-info">
                         <li>
                             <i class="ph-fill ph-map-pin"></i>
-                            <div><strong>Factory Address:</strong> Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506</div>
+                            <div><strong>Factory:</strong> Survey No. 55, Plot No A/8, 9, 13, 14, 19, 20, 70 Banglow, MIDC Tarapur, Boisar (W) - 401506, Maharashtra, India.</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-buildings"></i>
-                            <div><strong>Regd. Office:</strong> 21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Thane (W) - 400604</div>
+                            <div><strong>Office:</strong> 21, 22, 23, 2nd Floor, Sai Chambers, Mittal Park, Raghunath Nagar, Thane (W) - 400604, Maharashtra, India.</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-phone"></i>
-                            <div><strong>Phone:</strong> 9130220077 / 9112220077</div>
+                            <div><strong>Phone:</strong> +91 9130220077 / 9112220077</div>
                         </li>
                         <li>
                             <i class="ph-fill ph-envelope-simple"></i>
@@ -294,21 +506,37 @@
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <div class="copyright">
-                    © 2026 Clean Bio Tech LTD. All Rights Reserved.
-                </div>
-                <div class="credits">
-                    Designed for <span class="text-highlight">Industrial Excellence</span>
-                </div>
+                <div class="copyright">© 2026 Clean Bio Tech LTD. All Rights Reserved.</div>
+                <div class="credits">Designed for <span class="text-highlight">Maestloper media</span></div>
             </div>
         </div>
     </footer>
 
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <div class="fab-options">
+            <a href="https://wa.me/919130220077" class="fab-option whatsapp" target="_blank">
+                <i class="ph-fill ph-whatsapp-logo"></i>
+                <span>WhatsApp Us</span>
+            </a>
+            <a href="tel:+919130220077" class="fab-option phone">
+                <i class="ph-fill ph-phone-call"></i>
+                <span>Call Us</span>
+            </a>
+            <a href="sms:+919130220077" class="fab-option sms">
+                <i class="ph-fill ph-chat-text"></i>
+                <span>SMS Message</span>
+            </a>
+        </div>
+        <div class="fab-main">
+            <i class="ph-fill ph-chat-circle-dots"></i>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
